@@ -39,6 +39,10 @@ class DriverLicenseUpdateForm(forms.ModelForm):
         return validate_license_number(self.cleaned_data["license_number"])
 
 
+class SearchForm(forms.Form):
+    title = forms.CharField(max_length=255, required=False)
+
+
 def validate_license_number(
     license_number,
 ):  # regex validation is also possible here
