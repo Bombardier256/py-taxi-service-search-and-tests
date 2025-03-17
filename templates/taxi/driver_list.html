@@ -9,9 +9,9 @@
       </a>
     </h1>
 
-    <form action="" method="get">
+    <form action="" method="get" class="form-inline">
       {{ search_form|crispy }}
-      <input type="submit">
+      <input class="btn btn-secondary" type="submit" value="🔍" >
     </form>
 
     {% if driver_list %}
